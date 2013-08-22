@@ -1,10 +1,10 @@
-jar_files = ['util.jar', 'base.jar', 'openedge.jar']
+jar_files = ['openedge.jar']
 begin
   jar_files.each do |jarfile|
     require jarfile
   end
 rescue LoadError
-  puts "These Progress jar files are required in lib :['util.jar', 'base.jar', 'openedge.jar']"
+  puts "These Progress jar files are required in lib :['openedge.jar']"
 end
 
 
